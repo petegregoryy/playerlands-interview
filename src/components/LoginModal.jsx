@@ -6,10 +6,11 @@ const LoginModal = ({ setShowLogin }) => {
     const hideLogin = (e) => {
         e.preventDefault();
         setShowLogin(false);
+        document.body.style.overflow = "unset";
     };
     return (
         <div>
-            <div className="login-modal-darken"></div>
+            <div className="login-modal-darken" onClick={hideLogin}></div>
             <div className="login-modal-container">
                 <img className="login-modal-icon" src={LoginModalIcon} />
                 <h1 className="login-modal-label">

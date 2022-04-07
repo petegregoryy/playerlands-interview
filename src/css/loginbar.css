@@ -26,6 +26,7 @@
 
 .login-button:hover {
     border: 2px solid #3b3b53;
+    transform: scale(1.05);
 }
 .login-button:focus {
     border: 2px solid #5c5c83;

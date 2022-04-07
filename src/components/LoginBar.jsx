@@ -32,6 +32,7 @@ const LoginBar = ({ setShowLogin }) => {
                     className="login-button"
                     onClick={() => {
                         setShowLogin(true);
+                        document.body.style.overflow = "hidden";
                     }}
                 >
                     <div>
