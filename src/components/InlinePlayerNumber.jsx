@@ -9,6 +9,7 @@ const InlinePlayerNumber = () => {
         paddingLeft: 7,
         fontSize: "large",
         fontWeight: 700,
+        fontStyle: "italic",
     };
     return <label style={labelStyle}>122</label>;
 };

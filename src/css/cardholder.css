@@ -1,12 +1,17 @@
 .card-container {
     margin-top: 25px;
-    width: 1250px;
+    width: 100%;
+    max-width: 1250px;
     margin: auto;
 }
 
 .columns {
     display: flex;
     width: 100%;
+}
+.columns::after {
+    display: block;
+    clear: both;
 }
 
 .card-column {
@@ -16,8 +21,43 @@
 }
 
 .left {
-    width: 25%;
+    width: 100%;
+    max-width: 310px;
 }
 .right {
     width: 75%;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .columns {
+        display: block;
+        width: 100%;
+    }
+    .columns::after {
+        display: block;
+        clear: both;
+    }
+    .card-column {
+        width: 100%;
+        max-width: none;
+        padding: 0px;
+    }
+    .left {
+        width: 100%;
+        max-width: none;
+    }
+    .right {
+        width: 100%;
+        margin-top: 0px;
+        max-width: none;
+    }
 }

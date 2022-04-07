@@ -4,6 +4,7 @@
     max-width: 1250px;
     height: 110px;
     color: white;
+    min-width: 360px;
 }
 .loginbar-container {
     border-bottom: 2px solid #2c2c3f;
@@ -42,6 +43,7 @@
     position: relative;
     left: -15px;
     top: 3px;
+    font-style: italic;
 }
 
 .login-button-subtitle {

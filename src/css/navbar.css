@@ -3,6 +3,7 @@
     width: 100%;
     max-width: 1250px;
     height: 50px;
+    min-width: 360px;
 }
 
 .navbar-container {
@@ -54,6 +55,8 @@
 
 .nav-button-label {
     margin: 10px;
+    font-style: italic;
+    font-size: medium;
 }
 .nav-button-icon {
     float: left;

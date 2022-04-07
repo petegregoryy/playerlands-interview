@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/cards.css";
+
 import FullBodyImage from "../assets/full-model.png";
 
 const DonatorCard = () => {

@@ -3,7 +3,7 @@ import "../css/loginbar.css";
 import HomeIcon from "../assets/home.png";
 import CartIcon from "../assets/cart.png";
 
-const LoginBar = () => {
+const LoginBar = ({ setShowLogin }) => {
     return (
         <div className="loginbar-container">
             <div className="loginbar">
@@ -28,7 +28,12 @@ const LoginBar = () => {
                         Home
                     </label>
                 </button>
-                <button className="login-button">
+                <button
+                    className="login-button"
+                    onClick={() => {
+                        setShowLogin(true);
+                    }}
+                >
                     <div>
                         <img className="login-button-icon" src={CartIcon} />
                         <label className="login-button-label">Login</label>

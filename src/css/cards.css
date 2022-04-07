@@ -6,17 +6,17 @@
     padding: 5px;
 }
 .donator {
+    position: relative;
     display: flex;
     text-align: left;
     background-color: #c850de;
-    height: 100px;
 }
 
 .donator-model-container {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     left: -30px;
-    bottom: 45px;
+    bottom: 0px;
     width: 130px;
     height: 150px;
 }
@@ -29,11 +29,13 @@
 
 .donator-text-container {
     width: 60%;
+    margin-left: 100px;
 }
 
 .donator-title {
     font-weight: 700;
     font-size: x-large;
+    font-style: italic;
 }
 
 .donator-body {
@@ -56,6 +58,7 @@
     float: left;
     font-weight: 700;
     font-size: larger;
+    font-style: italic;
 }
 .balance-amount {
     float: left;
@@ -64,7 +67,7 @@
 }
 .balance-icon {
     height: 20px;
-    margin: 4px;
+    margin: 0px 4px 4px 4px;
     float: left;
 }
 .balance-form {
@@ -81,6 +84,8 @@
     font-size: large;
     background-color: #13131d;
     color: #979da9;
+    width: 100%;
+    min-width: 90px;
 }
 
 .balance-code:focus {
@@ -91,6 +96,7 @@
 
 .balance-submit {
     color: white;
+    text-align: center;
     font-weight: 700;
     font-size: large;
     background-color: #37d3ff;
@@ -98,10 +104,98 @@
     border-radius: 25px;
     padding: 10px 20px;
     margin-bottom: 10px;
+    width: 90%;
+    min-width: 190px;
     transition: 0.1s;
 }
 
 .balance-submit:hover {
     transform: scale(1.1);
     transition: 0.1s;
+}
+
+.payments {
+    background-color: #242430;
+}
+
+.payments-head-holder {
+    position: relative;
+    margin: auto;
+    width: 32px;
+}
+
+.payments-head:hover + .payments-head-hover {
+    display: block;
+}
+.payments-head-hover {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    background-color: #13131d;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-style: italic;
+    opacity: 95%;
+}
+
+.payments-head {
+    width: 32px;
+}
+
+.payments-header {
+    display: flex;
+}
+
+.payments-title {
+    float: left;
+    font-weight: 700;
+    font-size: larger;
+    font-style: italic;
+}
+.payments-icon {
+    height: 20px;
+    margin: 0px 4px 4px 4px;
+    float: left;
+}
+
+.main-card {
+    background-color: #242430;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    padding: 15px;
+}
+
+.main-card h1 {
+    font-size: 36pt;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.main-card a {
+    text-decoration: none;
+    color: #37d3ff;
+}
+.main-card p {
+    font-size: large;
+}
+
+.background-dot {
+    width: 350px;
+    opacity: 10%;
+}
+
+.dot-left {
+    position: absolute;
+    top: -200px;
+    left: -150px;
+}
+
+.dot-right {
+    position: absolute;
+    top: -200px;
+    right: -150px;
 }

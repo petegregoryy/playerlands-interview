@@ -1,7 +1,10 @@
 import React from "react";
 import "../css/cardholder.css";
+import "../css/cards.css";
 import DonatorCard from "./DonatorCard";
 import GiftBalanceCard from "./GiftBalanceCard";
+import MainCard from "./MainCard";
+import RecentPayments from "./RecentPayments";
 
 const CardHolder = () => {
     return (
@@ -10,10 +13,10 @@ const CardHolder = () => {
                 <div className="card-column left">
                     <DonatorCard />
                     <GiftBalanceCard />
-                    <DonatorCard />
+                    <RecentPayments />
                 </div>
                 <div className="card-column right">
-                    <DonatorCard />
+                    <MainCard />
                 </div>
             </div>
         </div>
