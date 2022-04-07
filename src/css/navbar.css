@@ -1,0 +1,62 @@
+.navbar {
+    margin: auto;
+    width: 100%;
+    max-width: 1250px;
+    height: 50px;
+}
+
+.navbar-container {
+    border-bottom: 2px solid #2c2c3f;
+    background-color: #1a1a26;
+}
+
+.social-link {
+    height: 20px;
+    padding: 2px;
+    margin: 10px;
+    float: left;
+    vertical-align: middle;
+    filter: invert(56%) sepia(0%) saturate(603%) hue-rotate(139deg)
+        brightness(76%) contrast(81%);
+}
+
+.social-link:hover {
+    filter: none;
+}
+
+.nav-button {
+    padding: 2px;
+    float: right;
+    vertical-align: middle;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 10px;
+    transition: 0.1s;
+    font-weight: 700;
+    font-size: large;
+}
+.nav-button:hover {
+    transform: scale(1.15);
+    transition: 0.2s;
+}
+.nav-button:active {
+    border: none;
+    outline: none;
+    transform: scale(0.97);
+    transition: 0.1s;
+}
+.nav-button:focus {
+    border: none;
+    outline: none;
+}
+
+.nav-button-label {
+    margin: 10px;
+}
+.nav-button-icon {
+    float: left;
+    height: 19px;
+    filter: invert(100%);
+}

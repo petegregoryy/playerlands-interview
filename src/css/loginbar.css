@@ -1,0 +1,51 @@
+.loginbar {
+    margin: auto;
+    width: 100%;
+    max-width: 1250px;
+    height: 110px;
+    color: white;
+}
+.loginbar-container {
+    border-bottom: 2px solid #2c2c3f;
+    background-color: #1a1a26;
+}
+.login-button {
+    padding: 5px 20px 5px 20px;
+    float: right;
+    background-color: #1a1a26;
+    border: 2px solid #2c2c3f;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    transition: 0.1s;
+    font-weight: 700;
+    font-size: large;
+    line-height: 1.5;
+}
+
+.login-button:hover {
+    border: 2px solid #3b3b53;
+}
+.login-button:focus {
+    border: 2px solid #5c5c83;
+    outline: none;
+}
+
+.login-button-icon {
+    height: 18px;
+    padding: 2px;
+    margin: 5px 0px 0px 0px;
+    float: left;
+}
+
+.login-button-label {
+    position: relative;
+    left: -15px;
+    top: 3px;
+}
+
+.login-button-subtitle {
+    font-size: medium;
+    font-weight: 300;
+    margin: 5px;
+}

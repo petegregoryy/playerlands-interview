@@ -1,0 +1,107 @@
+.card {
+    border: 2px solid #2c2c3f;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.donator {
+    display: flex;
+    text-align: left;
+    background-color: #c850de;
+    height: 100px;
+}
+
+.donator-model-container {
+    position: relative;
+    overflow: hidden;
+    left: -30px;
+    bottom: 45px;
+    width: 130px;
+    height: 150px;
+}
+.donator-model {
+    position: relative;
+    top: 0px;
+
+    height: 220px;
+}
+
+.donator-text-container {
+    width: 60%;
+}
+
+.donator-title {
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.donator-body {
+    margin-top: 0px;
+    font-size: larger;
+    color: #50205a;
+    font-weight: 500;
+}
+
+.balance {
+    background-color: #242430;
+}
+
+.balance-header {
+    width: 100%;
+    display: flex;
+}
+
+.balance-title {
+    float: left;
+    font-weight: 700;
+    font-size: larger;
+}
+.balance-amount {
+    float: left;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+.balance-icon {
+    height: 20px;
+    margin: 4px;
+    float: left;
+}
+.balance-form {
+    width: 80%;
+    margin: auto;
+}
+.balance-code {
+    margin: 20px 0px 10px;
+    padding: 10px 0px;
+    text-align: center;
+    border: 2px solid #2c2c3f;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: large;
+    background-color: #13131d;
+    color: #979da9;
+}
+
+.balance-code:focus {
+    outline: none;
+    border: 2px solid #5c5c83;
+    border-radius: 10px;
+}
+
+.balance-submit {
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    background-color: #37d3ff;
+    border: 2px solid #2c2c3f;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+
+.balance-submit:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
