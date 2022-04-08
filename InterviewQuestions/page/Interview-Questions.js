@@ -75,7 +75,6 @@ class NumberScale {
         }
         difference = maxRound - minRound;
         let interval = difference / 10;
-        console.log(minRound, maxRound, interval);
         let tempMin = minRound;
         for (let index = 0; index < 10; index++) {
             scales.push(Math.round((tempMin += interval) * 10) / 10);
