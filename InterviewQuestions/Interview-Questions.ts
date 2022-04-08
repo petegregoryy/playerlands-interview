@@ -33,10 +33,12 @@ const createSaleCountdownTicker = (
     }
 
     function displayMsHHMMSS(currentTime: number, endTime: Date) {
-        var timeLeft = endTime.getTime() - currentTime;
-        var hours = Math.floor(timeLeft / (1000 * 60 * 60));
-        var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        var timeLeft: number = endTime.getTime() - currentTime;
+        var hours: number = Math.floor(timeLeft / (1000 * 60 * 60));
+        var minutes: number = Math.floor(
+            (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds: number = Math.floor((timeLeft % (1000 * 60)) / 1000);
         targetElement.innerHTML = `<label class="countdown-number">${String(
             hours
         ).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(
@@ -87,10 +89,10 @@ class NumberScale {
 
         difference = maxRound - minRound;
 
-        let interval = difference / 10;
+        let interval: number = difference / 10;
         console.log(minRound, maxRound, interval);
 
-        let tempMin = minRound;
+        let tempMin: number = minRound;
         for (let index = 0; index < 10; index++) {
             scales.push(Math.round((tempMin += interval) * 10) / 10);
         }
