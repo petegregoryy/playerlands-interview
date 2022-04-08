@@ -24,14 +24,12 @@
 .donator-model {
     position: relative;
     top: 0px;
-    pointer-events: none;
     height: 220px;
 }
 
 .donator-text-container {
     width: 60%;
     margin-left: 100px;
-    pointer-events: none;
 }
 
 .donator-title {

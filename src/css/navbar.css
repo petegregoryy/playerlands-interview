@@ -39,7 +39,7 @@
     font-size: large;
 }
 .nav-button:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     transition: 0.2s;
 }
 .nav-button:active {
