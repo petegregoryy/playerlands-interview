@@ -80,7 +80,6 @@ class NumberScale {
             maxRound = Math.ceil(this.maxValue);
 
             scales.push(minRound);
-            difference = maxRound - minRound;
         } else {
             minRound = Math.floor(this.minValue / 10) * 10;
             maxRound = Math.ceil(this.maxValue / 10) * 10;
