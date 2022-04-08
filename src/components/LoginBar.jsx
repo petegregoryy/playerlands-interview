@@ -3,7 +3,7 @@ import "../css/loginbar.css";
 import HomeIcon from "../assets/home.png";
 import CartIcon from "../assets/cart.png";
 
-const LoginBar = ({ setShowLogin }) => {
+const LoginBar = ({ showLoginTrue }) => {
     return (
         <div className="loginbar-container">
             <div className="loginbar">
@@ -28,13 +28,7 @@ const LoginBar = ({ setShowLogin }) => {
                         Home
                     </label>
                 </button>
-                <button
-                    className="login-button"
-                    onClick={() => {
-                        setShowLogin(true);
-                        document.body.style.overflow = "hidden";
-                    }}
-                >
+                <button className="login-button" onClick={showLoginTrue}>
                     <div>
                         <img className="login-button-icon" src={CartIcon} />
                         <label className="login-button-label">Login</label>

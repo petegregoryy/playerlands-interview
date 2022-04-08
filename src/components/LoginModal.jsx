@@ -2,10 +2,13 @@ import React from "react";
 import LoginModalIcon from "../assets/login-modal-icon.png";
 import "../css/loginmodal.css";
 
-const LoginModal = ({ setShowLogin }) => {
+const LoginModal = ({ setShowLogin, showCategories, setShowCategories }) => {
     const hideLogin = (e) => {
         e.preventDefault();
         setShowLogin(false);
+        if (showCategories) {
+            setShowCategories(false);
+        }
         document.body.style.overflow = "unset";
     };
     return (

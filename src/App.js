@@ -7,10 +7,23 @@ import CardHolder from "./components/CardHolder";
 
 import { useEffect, useState } from "react";
 import LoginModal from "./components/LoginModal";
+import MobileCategoryBar from "./components/MobileCategoryBar";
+import MobileCategoryItem from "./components/MobileCategoryItem";
 
 function App() {
     const [windowWidth, setWindowWidth] = useState(0);
     const [showLogin, setShowLogin] = useState(false);
+    const [showCategories, setShowCategories] = useState(false);
+    const [categories, setCategories] = useState({});
+
+    function toggleCategories() {
+        setShowCategories(!showCategories);
+    }
+    function showLoginTrue() {
+        setShowLogin(true);
+        document.body.style.overflow = "hidden";
+    }
+
     function handleWindowResize() {
         setWindowWidth(window.innerWidth);
     }
@@ -23,9 +36,33 @@ function App() {
         <div className="App">
             <Navbar />
             {windowWidth > 953 && <LogoBar />}
-            <LoginBar setShowLogin={setShowLogin} />
+            {windowWidth > 600 ? (
+                <LoginBar setShowLogin={showLoginTrue} />
+            ) : showCategories ? (
+                <div>
+                    <MobileCategoryBar toggleCategories={toggleCategories} />
+                    <MobileCategoryItem
+                        icon="home.png"
+                        text="Home"
+                        clickFunction={toggleCategories}
+                    />
+                    <MobileCategoryItem
+                        icon="cart.png"
+                        text="Login"
+                        clickFunction={showLoginTrue}
+                    />
+                </div>
+            ) : (
+                <MobileCategoryBar toggleCategories={toggleCategories} />
+            )}
             <CardHolder />
-            {showLogin && <LoginModal setShowLogin={setShowLogin} />}
+            {showLogin && (
+                <LoginModal
+                    setShowLogin={setShowLogin}
+                    showCategories={showCategories}
+                    setShowCategories={setShowCategories}
+                />
+            )}
         </div>
     );
 }

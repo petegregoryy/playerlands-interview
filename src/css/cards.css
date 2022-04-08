@@ -8,6 +8,7 @@
 .donator {
     position: relative;
     display: flex;
+    min-height: 99px;
     text-align: left;
     background-color: #c850de;
 }
@@ -23,13 +24,14 @@
 .donator-model {
     position: relative;
     top: 0px;
-
+    pointer-events: none;
     height: 220px;
 }
 
 .donator-text-container {
     width: 60%;
     margin-left: 100px;
+    pointer-events: none;
 }
 
 .donator-title {
@@ -110,7 +112,7 @@
 }
 
 .balance-submit:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.1s;
 }
 

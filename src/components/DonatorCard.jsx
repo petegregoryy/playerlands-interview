@@ -7,13 +7,13 @@ const DonatorCard = () => {
         <div className="card donator">
             <div className="donator-model-container">
                 <img
-                    className="donator-model"
+                    className="donator-model unselectable"
                     src={FullBodyImage}
                     alt="full-body-model"
                     title="Top Donator"
                 />
             </div>
-            <div className="donator-text-container">
+            <div className="donator-text-container unselectable">
                 <label className="donator-title">Top Donator</label>
                 <p className="donator-body">
                     <b>ItsJakeOk</b>, donated the most this month.
