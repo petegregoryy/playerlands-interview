@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Patrick+Hand&family=Permanent+Marker&family=Staatliches&display=swap");
+body {
+    background-color: rgb(19, 22, 22);
+    text-align: center;
+    color: white;
+}
+.title-container {
+    background-color: rgb(236, 0, 217);
+}
+.title {
+    font-family: "Permanent Marker", cursive;
+    font-size: 64pt;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+.subtitle {
+    font-family: "Staatliches", cursive;
+    font-size: 24pt;
+    color: rgb(216, 216, 216);
+}
+.padder {
+    height: 15rem;
+}
+#countdown {
+    background-color: rgb(0, 140, 233);
+}
+.countdown-text {
+    font-family: "Permanent Marker", cursive;
+    font-size: 48pt;
+}
+.countdown-number {
+    font-family: "Major Mono Display", monospace;
+    font-size: 48pt;
+    text-decoration: underline dotted;
+}
+
+.scales {
+    width: 60%;
+    background-color: rgb(59, 59, 59);
+    border: 2px solid rgb(123, 0, 128);
+    margin: auto;
+    padding: 25px;
+}
+.scales-title {
+    font-family: "Staatliches", cursive;
+    font-size: 24pt;
+}
+.scales-label {
+    font-family: "Staatliches", cursive;
+    font-size: 18pt;
+}
+.scales-input {
+    background-color: rgb(59, 59, 59);
+    padding: 5px;
+    font-size: 15pt;
+    color: white;
+}
+.scales-output {
+    margin: 25px;
+}
+
+.scales-output-label {
+    font-family: "Staatliches", cursive;
+    text-decoration: underline;
+    font-size: 15pt;
+    margin: 2%;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+        <script type="text/javascript" src="./Interview-Questions.js"></script>
+    </head>
+    <body>
+        <div class="title-container">
+            <label class="title">SALE!</label><br /><label class="subtitle"
+                >Ends 30th April</label
+            >
+        </div>
+        <div id="countdown"></div>
+        <div class="padder"></div>
+        <div class="scales">
+            <div class="scales-title">
+                <label>Number Scale Generator</label>
+            </div>
+            <form id="scales-form" class="scales-form">
+                <label class="scales-label">Min</label>
+                <input class="scales-input" type="number" id="min" value="11" />
+                <label class="scales-label">Max</label>
+                <input class="scales-input" type="number" id="max" value="55" />
+            </form>
+            <div id="scales-output" class="scales-output"></div>
+        </div>
+        <script type="text/javascript">
+            const form = document.getElementById("scales-form");
+            const minInput = document.getElementById("min");
+            const maxInput = document.getElementById("max");
+
+            minInput.addEventListener("change", (e) => {
+                redrawLine();
+            });
+            maxInput.addEventListener("change", (e) => {
+                redrawLine();
+            });
+
+            parseScales(new NumberScale(11, 55).getScaleIntervals());
+            function redrawLine() {
+                let min = document.getElementById("min").value;
+                let max = document.getElementById("max").value;
+                console.log(min, max);
+                if (min && max) {
+                    let scales = new NumberScale(min, max).getScaleIntervals();
+                    parseScales(scales);
+                }
+            }
+            createSaleCountdownTicker(
+                "countdown",
+                new Date("04/1/2022 00:00:00"),
+                new Date("04/30/2022 00:00:00")
+            );
+            function parseScales(scales) {
+                let output = "";
+                scales.forEach((scale) => {
+                    output += `<label class="scales-output-label">${scale}</label>`;
+                });
+                document.getElementById("scales-output").innerHTML = output;
+            }
+        </script>
+    </body>
+</html>
