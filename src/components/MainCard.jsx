@@ -33,7 +33,7 @@ const MainCard = () => {
             </p>
             <p>
                 <b>
-                    If you have any questions or converns, please email our
+                    If you have any questions or concerns, please email our
                     payment support team at PlayerLands
                 </b>
             </p>
