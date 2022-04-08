@@ -13,7 +13,7 @@ const DonatorCard = () => {
                     title="Top Donator"
                 />
             </div>
-            <div className="donator-text-container unselectable">
+            <div className="donator-text-container">
                 <label className="donator-title">Top Donator</label>
                 <p className="donator-body">
                     <b>ItsJakeOk</b>, donated the most this month.
