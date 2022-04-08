@@ -113,6 +113,10 @@
     transform: scale(1.05);
     transition: 0.1s;
 }
+.balance-submit:focus {
+    outline: none;
+    border: 2px solid rgb(77, 255, 255);
+}
 
 .payments {
     background-color: #242430;

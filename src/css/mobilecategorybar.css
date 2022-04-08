@@ -15,7 +15,6 @@
 
 .mobile-category:focus {
     background-color: #434358;
-    border: none;
     outline: none;
 }
 .mobile-category:active {

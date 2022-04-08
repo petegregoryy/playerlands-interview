@@ -43,14 +43,11 @@
     transition: 0.2s;
 }
 .nav-button:active {
-    border: none;
-    outline: none;
     transform: scale(0.97);
     transition: 0.1s;
 }
 .nav-button:focus {
-    border: none;
-    outline: none;
+    outline: solid #2c2c3f;
 }
 
 .nav-button-label {
